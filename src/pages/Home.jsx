@@ -5,6 +5,8 @@ import Movies from "./Movies";
 import Hooks from "../components/Hooks";
 import CompA from "../components/CompA";
 import CompD from "../components/CompD";
+import WeatherApp from "../components/WeatherApp";
+import Todo from "../components/Todo";
 
 const Home=()=>{
     const mystyle = {
@@ -20,10 +22,12 @@ const Home=()=>{
         {/* <h1 className="text-5xl">Home Page</h1> */}
         {/* <Contact name={name}/> */}
         {/* <ChildComp firstname={name} lastname={lastname}/> */}
-        {/* <Movies/> */}
+        <Movies/>
         {/* <Hooks/> */}
-        <CompA/>
+        {/* <CompA/> */}
         {/* <CompD/> */}
+        {/* <WeatherApp/> */}
+        {/* <Todo/> */}
         </>
     )
 }

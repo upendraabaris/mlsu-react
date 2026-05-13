@@ -10,6 +10,7 @@ import Navbar from "./components/Navbar";
 import { BrowserRouter,Routes,Route } from "react-router-dom";
 import { useState } from "react";
 import { ThemeContext } from "./context/ThemeContext";
+import MovieDetails from "./pages/MovieDetails";
 
 
 const App=()=>{
@@ -29,7 +30,8 @@ const App=()=>{
         <Route path="/" element={<Home/>}/>
         <Route path="/about" element={<About/>}/>
         <Route path="/services" element={<Services/>}/>
-        <Route path="/contact" element={<Contact/>}/>
+        <Route path="/contact" element={<Contact/>}/>\
+        <Route path="/movie/:id" element={<MovieDetails/>}/>
       </Routes>
       </div>
       </ThemeContext.Provider>
